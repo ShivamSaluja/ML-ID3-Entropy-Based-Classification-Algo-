@@ -2,7 +2,7 @@
 
 Steps to run the code :
 
-1] Save the database in a .txt file with name golf.txt
+1] Save the database in a .txt file with name golf.data
 
 2] Save the below code in a C file and name it id3.c
 
