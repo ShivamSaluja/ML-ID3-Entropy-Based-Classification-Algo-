@@ -60,6 +60,8 @@ int search(struct node *head,char name[15])
 
     if(temp==NULL)
         return 3;
+    else
+	return 0;
 }
 
 
@@ -266,7 +268,7 @@ struct deci_tree* infoGainRecursive(int Z[500][500],int b[50][50],struct deci_tr
              parent->datasetCol = attr-1;
              parent->childno = 0;        
              printf("\n\tnode %d is terminated with row value %d ,  child of %d i posotion value %d\n",parent->data , parent->pos ,sd,parent->ivalue);
-             return ;
+             return 0;
         }
         else{
             findk(modifiedA,modifiedB,obj,attr);         
@@ -361,7 +363,7 @@ int classification(int a[500][500],struct deci_tree *head,int test_data_pos,int 
 }
 
 
-void main(){ 
+int main(){ 
 
     struct node *first = NULL;
     struct deci_tree *head = NULL,*parent = NULL,*temphead = NULL;
@@ -451,4 +453,5 @@ void main(){
     parent =(struct deci_tree *)malloc(sizeof(struct deci_tree));
 
     head = infoGainRecursive(a,NULL,parent,database,attr,attr,training,flag,attr,a);
+    return 0;	
 }
