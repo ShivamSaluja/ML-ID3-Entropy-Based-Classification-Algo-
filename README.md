@@ -1,4 +1,4 @@
-# ML-ID3
+# ML-ID3 : A Entropy Based Classification ALGO.
 
 Steps to run the code :
 
